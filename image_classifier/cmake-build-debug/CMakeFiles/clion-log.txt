@@ -1,0 +1,8 @@
+/opt/clion-2017.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jintian/workspace/image_classifier
+-- [caffe] we just found caffe.
+-- /home/jintian/caffe/build/install/include
+-- [cuda] we found CUDA.
+-- /usr/local/cuda/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jintian/workspace/image_classifier/cmake-build-debug

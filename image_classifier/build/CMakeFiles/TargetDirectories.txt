@@ -1,0 +1,3 @@
+/home/jintian/workspace/image_classifier/build/CMakeFiles/rebuild_cache.dir
+/home/jintian/workspace/image_classifier/build/CMakeFiles/edit_cache.dir
+/home/jintian/workspace/image_classifier/build/CMakeFiles/image_classifier.dir

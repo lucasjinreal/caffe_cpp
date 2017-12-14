@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/jintian/workspace/image_classifier/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_13fd6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_13fd6.dir/build.make CMakeFiles/cmTC_13fd6.dir/build
+make[1]: Entering directory '/home/jintian/workspace/image_classifier/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13fd6.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_13fd6.dir/CheckSymbolExists.c.o   -c /home/jintian/workspace/image_classifier/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_13fd6
+/opt/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13fd6.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     CMakeFiles/cmTC_13fd6.dir/CheckSymbolExists.c.o  -o cmTC_13fd6 
+CMakeFiles/cmTC_13fd6.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_13fd6.dir/build.make:97: recipe for target 'cmTC_13fd6' failed
+make[1]: *** [cmTC_13fd6] Error 1
+make[1]: Leaving directory '/home/jintian/workspace/image_classifier/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_13fd6/fast' failed
+make: *** [cmTC_13fd6/fast] Error 2
+
+File /home/jintian/workspace/image_classifier/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/jintian/workspace/image_classifier/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6fea6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fea6.dir/build.make CMakeFiles/cmTC_6fea6.dir/build
+make[1]: Entering directory '/home/jintian/workspace/image_classifier/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6fea6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6fea6.dir/CheckFunctionExists.c.o   -c /opt/clion-2017.3/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6fea6
+/opt/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fea6.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_6fea6.dir/CheckFunctionExists.c.o  -o cmTC_6fea6 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6fea6.dir/build.make:97: recipe for target 'cmTC_6fea6' failed
+make[1]: *** [cmTC_6fea6] Error 1
+make[1]: Leaving directory '/home/jintian/workspace/image_classifier/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6fea6/fast' failed
+make: *** [cmTC_6fea6/fast] Error 2
+
+
